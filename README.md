@@ -1,5 +1,6 @@
 # Yandex API Player (PHP and CURL)
 PHP classes to work with Yandex Music.
+
 **Funcitonality:**
 - query search with pagination;
 - receiweing track information;
@@ -9,6 +10,7 @@ PHP classes to work with Yandex Music.
 
 ### Track Class (api/Track.php)
 Stores information about track and contains:
+
 **Params:**
 ```
     id:Integer                  -   Yandex track ID
@@ -22,6 +24,7 @@ Stores information about track and contains:
 
 ### Searcher Class (api/Searcher.php)
 Searching tracks for passed query string and contains:
+
 **Params:**
 ```
     query:String                -   query string
@@ -40,6 +43,7 @@ Searching tracks for passed query string and contains:
 
 ### Loader Class (api/Loader.php)
 Get donload needed information for single Track and contains:
+
 **Params:**
 ```
     track:Track                -    Track object
@@ -60,6 +64,7 @@ Get donload needed information for single Track and contains:
 
 ### Functions Class (api/Functions.php)
 Contains helping functions for requests and download
+
 **Methods:**
 ```
     String requestURL($url,$params)     - Executes CURL request and returns response
